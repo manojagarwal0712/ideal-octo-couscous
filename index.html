@@ -55,6 +55,20 @@
         .subnav ul li:hover {
             background-color: #5F9EA0; /* Cadet Blue */
         }
+        .subject-content {
+            display: none;
+            padding: 20px;
+        }
+        .subject-content.active {
+            display: block;
+        }
+        .subject-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .subject-content ul li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -64,60 +78,47 @@
 <nav>
     <ul>
         <li>
-            <a href="#">Class 1-5</a>
+            <a href="#class-1">Class 1</a>
             <div class="subnav">
                 <ul>
-                    <li><a href="#class-1">Class 1</a></li>
-                    <li><a href="#class-2">Class 2</a></li>
-                    <li><a href="#class-3">Class 3</a></li>
-                    <li><a href="#class-4">Class 4</a></li>
-                    <li><a href="#class-5">Class 5</a></li>
+                    <li><a href="#class1-maths">Mathematics</a></li>
+                    <li><a href="#class1-science">Science</a></li>
+                    <li><a href="#class1-english">English</a></li>
                 </ul>
             </div>
         </li>
+        <!-- Create similar structure for Class 2 to Class 5 -->
     </ul>
 </nav>
 <main>
     <section id="class-1" class="content">
-        <h2>Class 1 Sample Question Papers</h2>
-        <div class="subject-links">
-            <h3>General Subjects</h3>
+        <section id="class1-maths" class="subject-content">
+            <h2>Class 1 Mathematics Sample Papers</h2>
             <ul>
-                <li><a href="#class1-maths">Mathematics</a></li>
-                <li><a href="#class1-science">Science</a></li>
-                <li><a href="#class1-english">English</a></li>
-                <!-- Add more subject links as needed -->
+                <li><a href="#class1-maths-paper1">Sample Paper 1</a></li>
+                <li><a href="#class1-maths-paper2">Sample Paper 2</a></li>
+                <!-- Add more sample paper links for Mathematics Class 1 -->
             </ul>
-        </div>
-        <!-- Content for Class 1 subjects -->
-        <div id="class1-maths" class="subject-content">
-            <h3>Mathematics Sample Question Papers for Class 1</h3>
+        </section>
+        <section id="class1-science" class="subject-content">
+            <h2>Class 1 Science Sample Papers</h2>
             <ul>
-                <li><a href="#">Sample Paper 1</a></li>
-                <li><a href="#">Sample Paper 2</a></li>
-                <!-- Add more sample paper links for Maths -->
+                <li><a href="#class1-science-paper1">Sample Paper 1</a></li>
+                <li><a href="#class1-science-paper2">Sample Paper 2</a></li>
+                <!-- Add more sample paper links for Science Class 1 -->
             </ul>
-        </div>
-        <div id="class1-science" class="subject-content">
-            <h3>Science Sample Question Papers for Class 1</h3>
+        </section>
+        <section id="class1-english" class="subject-content">
+            <h2>Class 1 English Sample Papers</h2>
             <ul>
-                <li><a href="#">Sample Paper 1</a></li>
-                <li><a href="#">Sample Paper 2</a></li>
-                <!-- Add more sample paper links for Science -->
+                <li><a href="#class1-english-paper1">Sample Paper 1</a></li>
+                <li><a href="#class1-english-paper2">Sample Paper 2</a></li>
+                <!-- Add more sample paper links for English Class 1 -->
             </ul>
-        </div>
-        <div id="class1-english" class="subject-content">
-            <h3>English Sample Question Papers for Class 1</h3>
-            <ul>
-                <li><a href="#">Sample Paper 1</a></li>
-                <li><a href="#">Sample Paper 2</a></li>
-                <!-- Add more sample paper links for English -->
-            </ul>
-        </div>
-        <!-- Add more subject content sections as needed -->
+        </section>
+        <!-- Add more subject content sections for Class 1 as needed -->
     </section>
-    <!-- Sections for Class 2 to Class 5 -->
-    <!-- Similar structure as above -->
+    <!-- Create sections for Class 2 to Class 5 -->
 </main>
 </body>
 </html>

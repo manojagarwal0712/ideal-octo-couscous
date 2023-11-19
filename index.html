@@ -55,6 +55,20 @@
         .subnav ul li:hover {
             background-color: #5F9EA0; /* Cadet Blue */
         }
+        .content {
+            display: none;
+            padding: 20px;
+        }
+        .content.active {
+            display: block;
+        }
+        .subject-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .subject-links ul li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -68,9 +82,8 @@
             <a href="#">Sample Paper</a>
             <div class="subnav">
                 <ul>
-                    <li><a href="#">Pre Primary</a></li>
-                    <li><a href="#">Class 2</a></li>
-                    <!-- Add more sub-navigation items as needed -->
+                    <li><a href="#pre-primary">Pre Primary</a></li>
+                    <li><a href="#class-2">Class 2</a></li>
                 </ul>
             </div>
         </li>
@@ -79,9 +92,64 @@
     </ul>
 </nav>
 <main>
-    <!-- Your main content goes here -->
-    <h2>Welcome to Our Education Website!</h2>
-    <p>Feel free to explore our sample papers for Pre Primary and Class 2.</p>
+    <section id="pre-primary" class="content">
+        <h2>Pre Primary Sample Papers</h2>
+        <div class="subject-links">
+            <h3>Subjects</h3>
+            <ul>
+                <li><a href="#maths">Mathematics</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#english">English</a></li>
+                <!-- Add more subject links as needed -->
+            </ul>
+        </div>
+        <!-- Content for Pre Primary subjects -->
+        <div id="maths" class="subject-content">
+            <h3>Mathematics Sample Questions for Pre Primary</h3>
+            <p>Sample questions and topics for Mathematics in Pre Primary.</p>
+            <!-- Add specific sample questions and topics here -->
+        </div>
+        <div id="science" class="subject-content">
+            <h3>Science Sample Questions for Pre Primary</h3>
+            <p>Sample questions and topics for Science in Pre Primary.</p>
+            <!-- Add specific sample questions and topics here -->
+        </div>
+        <div id="english" class="subject-content">
+            <h3>English Sample Questions for Pre Primary</h3>
+            <p>Sample questions and topics for English in Pre Primary.</p>
+            <!-- Add specific sample questions and topics here -->
+        </div>
+        <!-- Add more subject content sections as needed -->
+    </section>
+    <section id="class-2" class="content">
+        <h2>Class 2 Sample Papers</h2>
+        <div class="subject-links">
+            <h3>Subjects</h3>
+            <ul>
+                <li><a href="#maths-class2">Mathematics</a></li>
+                <li><a href="#science-class2">Science</a></li>
+                <li><a href="#english-class2">English</a></li>
+                <!-- Add more subject links as needed -->
+            </ul>
+        </div>
+        <!-- Content for Class 2 subjects -->
+        <div id="maths-class2" class="subject-content">
+            <h3>Mathematics Sample Questions for Class 2</h3>
+            <p>Sample questions and topics for Mathematics in Class 2.</p>
+            <!-- Add specific sample questions and topics here -->
+        </div>
+        <div id="science-class2" class="subject-content">
+            <h3>Science Sample Questions for Class 2</h3>
+            <p>Sample questions and topics for Science in Class 2.</p>
+            <!-- Add specific sample questions and topics here -->
+        </div>
+        <div id="english-class2" class="subject-content">
+            <h3>English Sample Questions for Class 2</h3>
+            <p>Sample questions and topics for English in Class 2.</p>
+            <!-- Add specific sample questions and topics here -->
+        </div>
+        <!-- Add more subject content sections as needed -->
+    </section>
 </main>
 </body>
 </html>

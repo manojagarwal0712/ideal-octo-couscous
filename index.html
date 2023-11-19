@@ -157,5 +157,22 @@
     </section>
 
 </main>
+<script>
+    // JavaScript to handle showing/hiding content on subnav click
+    const subNavLinks = document.querySelectorAll('.subnav ul li a');
+    const contentSections = document.querySelectorAll('.subject-content');
+    subNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').replace('#', '');
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+                if (section.id === targetId) {
+                    section.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
